@@ -51,10 +51,10 @@ def buildDriveTree(rootId):
             childFolder = getRequest(folderId)
             folderInfo["children"] = childFolder
         
-    processedLog = json.dumps(tree, indent=4, sort_keys=True)
+    processedResponce = json.dumps(tree, indent=4, sort_keys=True)
 
-    with open("httpLog.json", "w") as f:
-        f.write(processedLog)
+    with open("driveInfo.json", "w") as f:
+        f.write(processedResponce)
 
 def main():
     folderId = "17tvogD2WnmudB-MqnAdxnNCC7CtZS-Gm"
