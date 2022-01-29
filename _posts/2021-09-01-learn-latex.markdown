@@ -7,8 +7,8 @@ tags: latex
 excerpt_separator: <!--more-->
 ---
 
-Here I'll share a bit of my experience about how to learn \LaTeX from zero, the best
-editor for \LaTeX (IMO) as well as typical mistakes.
+Here I'll share a bit of my experience about how to learn `\LaTeX` from zero, the best
+editor for `\LaTeX` (IMO) as well as typical mistakes.
 
 <!--more-->
 
@@ -28,10 +28,20 @@ editor for \LaTeX (IMO) as well as typical mistakes.
 
 ## "Who Is LaTeX" Stage
 ### Typing
-It is a requirement for [any](https://www.ratatype.com) programming activity. Open any trainer for blind printing with ten fingers — and go ahead!
+It is a requirement for [any](https://www.ratatype.com) programming activity. Open any trainer for blind printing 
+with ten fingers — and go ahead!
 
 ### How To Learn
-For a quick start in LaTeX take [a free course from the HSE](https://www.coursera.org/learn/latex). The basics could be learned in 4-5 hours, and two days off are enough for the entire course. Video lessons are better than thick books in the beginning.
+For a quick start in `\LaTeX` take [a free course from the HSE (in Russian)](https://www.coursera.org/learn/latex). 
+The basics could be learned in 4-5 hours, and two days off are enough for the entire course. Video lessons are better 
+than thick books in the beginning.
+
+Having been said that I also recommend this [free online introduction to `\LaTeX`](https://www.overleaf.com/learn/latex/Free_online_introduction_to_LaTeX_(part_1))
+in three parts, made by [Overleaf](https://www.overleaf.com/). Instead of a dry book guide, they made it as a presentation.
+There are a lot of examples, with a focus only on the most important stuff. This introduction should take about
+4-hours for you to read.
+
+Also, Overleaf has great docs. Later, when you have some questions about `\LaTeX`, you can look it up in their docs.
 
 ### Where To TeX
 There are two ways.
