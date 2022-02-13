@@ -13,18 +13,12 @@ editor for `\LaTeX` (IMO) as well as typical mistakes.
 <!--more-->
 
 ---
-## Table of Content
-1. ["Who Is LaTeX" Stage](#who-is-latex-stage)
-    - [Typing](#typing)
-    - [How To Learn](#how-to-learn)
-    - [Where To Tex](#where-to-tex)
-        - [GUI / Text Editor for LaTeX](#gui--text-editor-for-latex) 
-1. [Life Hacks](#life-hacks)
-1. [Typical Mistakes](#typical-mistakes)
-1. [Useful Links](#useful-links)
-
+### Table of Content
+{:.no_toc}
+* [TOC]
+{:toc}
 ---
-<p>&nbsp;</p>
+
 
 ## "Who Is LaTeX" Stage
 ### Typing

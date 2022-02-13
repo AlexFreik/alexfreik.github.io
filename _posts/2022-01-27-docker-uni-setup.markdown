@@ -13,22 +13,16 @@ What I'll address here is **how to easily run Linux Assembly on macOS machines**
 <!--more-->
 
 ---
-# Table of Content
-1. [TL;DR](tldr)
-2. [The *"Clumsy"* Way (VM)](#the-clumsy-way-vm)
-   - [Pros](#pros)
-   - [Pros](#cons)
-3. [The *"Smart"* Way (Docker)](#the-smart-way-docker)
-   - [Pros](#pros-1)
-   - [Pros](#cons-1)
-   - [Explanation of Code Snippets](#explanation-of-code-snippets)
-   - [A Few Thing to Mention](#a-few-thing-to-mention)
-4. [Renting a Linux Server](#renting-a-linux-server)
-   - [Pros](#pros-2)
-   - [Pros](#cons-2)
+### Table of Content
+{:.no_toc}
 
+* [TOC]
+{:toc}
 ---
 
+
+* A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
+  {:toc}
 
 ## TL;DR
 There are a few ways how to do it, IMO the easiest and most pleasant way is to use `Docker`:

@@ -3,6 +3,14 @@ layout: page
 title: About
 permalink: /about/
 ---
+<link rel="stylesheet" href="/assets/css/styles.css">
+<img id="img-ava" align="right" src="/img/ava_square.jpg">
+
+# Contents header
+{:.no_toc}
+
+* A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above 
+{:toc}
 
 ## Contacts
 - **LinkedIn**: [linkedin.com/in/{{ site.linkedId }}/](https://www.linkedin.com/in/{{ site.linkedId }}/)
