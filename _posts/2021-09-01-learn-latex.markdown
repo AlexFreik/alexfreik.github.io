@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: my_post
 title: 'Learn \LaTeX'
 date: 2021-09-01
 categories: latex
 tags: latex
+mathjax: true
 excerpt_separator: <!--more-->
 ---
 
@@ -18,7 +19,6 @@ editor for `\LaTeX` (IMO) as well as typical mistakes.
 * [TOC]
 {:toc}
 ---
-
 
 ## "Who Is LaTeX" Stage
 ### Typing
@@ -61,8 +61,8 @@ PS: The `Vim` + `LaTeX` setup can easily take 20+ hours to make it work if you a
 ## Life Hacks
 1. Use `\newcommand{command_name}{script_of_command}` for commands you use **very often**.
    Compare `f: \mathbb{R} \to \mathbb{R}` and `f: \R\to\R`.
-   <img src="https://i.upmath.me/svg/f%3A%20%5Cmathbb%7BR%7D%20%5Cto%20%5Cmathbb%7BR%7D" alt="f: \mathbb{R} \to \mathbb{R}" />
-1. Learn how to tex in `Vim` =)
+   $$ f: \mathbb{R} \to \mathbb{R} $$ 
+2. Learn how to TeX in `Vim` =)
    
 ## Typical Mistakes
 1. Please, God, don't do 500+ lines main.tex ... 
@@ -71,51 +71,54 @@ PS: The `Vim` + `LaTeX` setup can easily take 20+ hours to make it work if you a
 
     Instead --- use `input{anotherFile.tex}` or `include{anotherFile.tex}` to structure code.
 
-1. Not using or defining `LaTeX` environments. 
+2. Not using or defining `LaTeX` environments. 
     For every theorem, proof, note, etc. you can set special environment (`\begin{theorem}`, `\begin{proof}`).
     - Now you can change the style of your theorems by changing one line.
 
-1. Not using `multiline` or `align` environments for long formulas.
-    <img src="https://i.upmath.me/svg/%5Cbegin%7Balign*%7D%0Aa%20%26%3D%20%20b%20%2B%20c%20%2B%20d%20-%20d%20%5C%5C%0A%26%3D%20b%20%2B%20c%0A%5Cend%7Balign*%7D" alt="\begin{align*}
-    a &amp;=  b + c + d - d \\
-    &amp;= b + c
-    \end{align*}" />
-```
+3. Not using `multiline` or `align` environments for long formulas.\
+    $$ 
+    \begin{align*}
+        a &=  b + c + d - d \\
+        &= b + c
+    \end{align*}
+    $$
+```latex
 \begin{align*}
     a &=  b + c + d - d \\
       &= b + c
 \end{align*}
 ``` 
 1. Not using `\cfrac` or `\displaystyle` when necessary.
-    - Otherwise, the formula may get hard to read.  
-    <img src="https://i.upmath.me/svg/%5Cfrac%7B2%20%2B%20%5Cfrac%7B8%7D%7B4%7D%7D%7B6%7D" alt="\frac{2 + \frac{8}{4}}{6}" /> (`\frac{2 + \frac{8}{4}}{6}`)  
-    <img src="https://i.upmath.me/svg/%5Cfrac%7B%5Cdisplaystyle%202%20%2B%20%5Cfrac%7B8%7D%7B4%7D%7D%7B6%7D" alt="\frac{\displaystyle 2 + \frac{8}{4}}{6}" /> (`\cfrac{2 + \frac{8}{4}}{6}`)  
+   - Otherwise, the formula may get hard to read.  
+   $$ \frac{2 + \frac{8}{4}}{6} $$ --- without `\displaystyle`\
+   $$ \cfrac{2 + \frac{8}{4}}{6} $$ --- with `\displaystyle`
 
 
 1. Not using `\text` inside formulas.  
-    <img align="center" src="//i.upmath.me/svg/" alt="" />
-<img align="center" src="//i.upmath.me/svg/%5Cbegin%7Balign*%7D%0Aa%20%26%3D%20a%20%2B%20b%20%2B%20c%20%2B%20d%20%2C%20when%5C%3B%20sun%5C%3B%20is%5C%3B%20red%20%20%5C%5C%0Aa%20%26%3D%20b%20%2B%20c%2C%20%5Ctext%7Bwhen%20sun%20is%20white%7D%0A%5Cend%7Balign*%7D" alt="\begin{align*}
-a &amp;= a + b + c + d , when\; sun\; is\; red  \\
-a &amp;= b + c, \text{when sun is white}
-\end{align*}" />
-    ```
-$$\begin{align*}
-a &= a + b + c + d , when\; sun\; is\; red  \\
-a &= b + c, \text{when sun is white}
-\end{align*}$$
-    ```
-1. All variables inside text should be math mode.  
-    -a or <img src="https://i.upmath.me/svg/-a" alt="-a" />
-1. Avoid making new lines in text with `\\`.
+   $$
+   \begin{align*}
+       a &= a + b + c + d , when\; sun\; is\; red  \\
+       a &= b + c, \text{ when sun is white}
+   \end{align*}
+   $$
+   ```latex
+   \begin{align*}
+   a &= a + b + c + d , when\; sun\; is\; red  \\
+   a &= b + c, \text{ when sun is white}
+   \end{align*}
+   ```
+2. All variables inside text should be math mode.  
+    -a or $$-a$$
+3. Avoid making new lines in text with `\\`.
     - Using empty lines instead makes code much more readable.
-1. Not using `\ldots` for ...
+4. Not using `\ldots` for ...
   
-1. Ignoring warnings and errors.
+5. Ignoring warnings and errors.
     - You **must not**  ignore errrs.
     - Warnings help you deepen your knowledge and improve code.
-1. Not using `Git` for big projects.
+6. Not using `Git` for big projects.
     - Best of luck...
-1. Using tutorials from ancient times.
+7. Using tutorials from ancient times.
     - You can meet outdated and deprecated practices.
 
     

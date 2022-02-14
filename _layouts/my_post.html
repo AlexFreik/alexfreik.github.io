@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+---
+layout: post
+---
+
+{% if page.mathjax == true %}
+<!-- MathJax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<noscript>Please enable JavaScript to view \LaTeX equations.</noscript>
+{% endif %}
+
+
+{{ content }}
+
+
+{% if page.comments %}
+<!--fb comments-->
+<noscript>Please enable JavaScript to view the comments.</noscript>
+{% endif %}
+

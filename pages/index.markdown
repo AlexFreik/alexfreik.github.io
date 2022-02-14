@@ -1,5 +1,5 @@
 ---
-layout: mypage
+layout: my_page
 permalink: /
 ---
 
