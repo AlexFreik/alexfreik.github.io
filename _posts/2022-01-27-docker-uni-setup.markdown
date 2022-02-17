@@ -133,3 +133,4 @@ Yes, you can always rent a Linux server and access it through `SSH`.
 ### Cons
 - It is more expensive than using `Docker` (will cost 10-20 EUR a month).
 - You can only access the server when you have Internet.
+
